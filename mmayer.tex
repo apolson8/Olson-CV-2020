@@ -1,0 +1,303 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[9pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.3cm,top=1.00cm,bottom=1.00cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+\usepackage{multicol}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Andrew Phillip Olson}
+\tagline{Fisheries Management \& Research Biologist}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{3.3cm}{profile.jpg}
+
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with 
+
+  %\printinfo{symbol}{detail}
+  \mailaddress{andrew.olson@alaska.gov}
+  \phone{(907) 465-4259}
+%  \mailaddress{Address, Street, 00000 County}
+  \location{Juneau, Alaska}
+   \github{github.com/apolson8} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection[page1sidebar]{EDUCATION}
+\cvevent{Master of Science (Fisheries)}{University of Alaska Fairbanks}{2012--2016}{Fairbanks, Alaska}
+\begin{itemize}
+    \item Thesis: Spatial Variability in Size at Maturity and Reproductive Timing of Golden King Crab (\textit{Lithodes aequispinus}) in Southeast Alaska
+\end{itemize}
+\vspace{0.15cm}
+
+
+\cvevent{Bachelor of Science (Marine Biology)}{University of Alaska Southeast}{2005--2008}{Juneau, Alaska}
+\vspace{0.15cm}
+
+
+\cvevent{}{Cascadia Community College}{2003--2005}{Bothell, Washington}
+
+\vspace{0.30cm}
+
+\begin{fullwidth}
+
+\cvsection{Experience}
+
+\cvevent{Groundfish-Shellfish Coordinator}{Alaska Department of Fish and Game}{April 2019 -- Present} {Juneau, Alaska}
+\begin{itemize}
+    \item  Supervises regional research and management programs for groundfish and shellfish consisting of 13 staff across multiple ports
+    \item Oversight of project budgets and proposals ensuring funding matches expenditure needs
+    \item Analyzes and reviews data for research and stock assessment surveys to inform fishery management decisions
+    \item Fishery regulatory and management history expert
+    \item Leadership Plan Team member for the ADF\&G Statewide Rockfish Initiative
+    \item Communicates and collaborates with fishery scientists, stakeholders, and the general public on issues relating to fishery regulations, harvest objectives, and stock assessment methodologies
+    \item Regional editor for stock assessment analyses, operational plans, and management reports for groundfish and shellfish fisheries
+    \item Groundfish and Scallop Plan Team member for the North Pacific Fishery Management Council 
+    \item Oversight and participation in preparing and commenting on regulatory proposals for the Alaska Board of Fisheries
+    \item Developed and implemented a college internship to provide a range of experiences in research and management for multiple
+    \\commercial fisheries
+
+
+%\smallskip
+\end{itemize}
+\vspace{0.15cm}
+
+\cvevent{Groundfish Project Leader}{Alaska Department of Fish and Game}{March 2016 -- April 2019}{Juneau, Alaska}
+\begin{itemize}
+\item Supervised and led a team of seven staff across 3 ports with an annual budget of \$1.3 million
+\item Served as principal investigator on stock assessment surveys (yelloweye \\rockfish ROV, sablefish longline and marking survey) and \\supervising biologists in the field
+\item Analyzed data, made harvest decisions, authored scientific reports, and presented research at professional and fishing industry meetings 
+\item Collaborated with the public on developing policy decisions
+\item Recommended and presented policy alternatives to the Alaska Board of Fisheries
+\item Served on US-Canada Technical Sub-Committee Team and ADF\&G Statewide Rockfish Initiative
+\item Collaborated with university, federal, and international scientists on current fisheries issues
+\item Developed and conducted public outreach through local schools, newsletters, and social media on groundfish research 
+\item Initiated and administrated for ADF\&G Twitter (@adfg\_seak) providing regional updates on fisheries research and management
+
+
+
+
+%\smallskip
+\end{itemize}
+\vspace{2.0cm}
+
+
+\cvevent{Shellfish Research \& Management Biologist II}{Alaska Department of Fish and Game}{Sept. 2011 -- March 2016}{Juneau, Alaska}
+\begin{itemize}
+\item Project lead for golden king crab observer program 
+\item Co-led for red king and Tanner crab stock assessment surveys
+\item Assisted in managing of the king (golden, red, \& blue), Tanner, and Dungeness crab fisheries in Southeast Alaska
+\item Analyzed and reviewed stock assessment data and collaborated with other biologists to make fishery management decisions
+\item Developed mobile survey application in ArcPad for in-season management of SE Alaska crab species
+\item Participated in the Board of Fisheries regulatory process by reviewing and commenting on public proposals to regulations
+\item Presented research at professional conferences and public meetings
+\item Authored and edited fisheries reports
+%\smallskip
+\end{itemize}
+\vspace{0.15cm}
+
+\cvevent{Shellfish Research Biologist I}{Alaska Department of Fish and Game}{June 2009 -- Sept. 2011}{Juneau, Alaska}
+\begin{itemize}
+\item Led the golden king crab observer program
+\item Assistant biologist for the red king crab stock assessment survey
+\item Organized logistics and prepared gear for field work
+\item Supervised biologists in the field
+\item Participated in field work for multiple species (golden and red king crab, Tanner crab, and spot shrimp)
+\smallskip
+\end{itemize}
+\vspace{0.15cm}
+\cvevent{Fish and Wildlife Technician II}{Alaska Department of Fish and Game}{Oct. 2008 -- May 2009}{Juneau, Alaska}
+\begin{itemize}
+\item Analyzed Tanner and snow crab reproductive potential through the analysis of shell condition, egg viability, and sperm cell counts
+\item Assisted in collections of crabs from pots using a small vessel
+\item Collected blood samples from crabs for further analysis of bitter crab disease
+%\smallskip
+\end{itemize}
+\end{fullwidth}
+
+\vspace{0.30cm}
+
+%\divider
+
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/10em/accent!30/Sleeping \& dreaming about work,
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/13em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%   20/15em/accent!40/Spending time with family,
+%   5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
+
+
+
+\cvsection{Publications}
+
+\smallskip
+\begin{fullwidth}
+\begin{enumerate}
+\normalsize
+\item Bishop, G., C. Siddon, and \textbf{A. Olson}. 2013. Southeast Alaska Tanner crab survey and stock health prior to the 2011/2012 season. Alaska Department of Fish and Game, Division of Commercial Fisheries, Regional Information Report 1J13-03, Douglas.
+\vspace{0.15cm}
+\item Ehresmann, R., and \textbf{A. Olson}. 2021. Northern Southeast Inside Subdistrict sablefish management plan and stock assessment for 2021. Alaska Department of Fish and Game, Division of Commercial Fisheries, Regional Information Report 1J21-13, Douglas.
+\vspace{0.15cm}
+\item Ehresmann, R. K., and \textbf{A. P. Olson}. 2021. 2021 Southern Southeast Inside Subdistrict Sablefish Fishery Management Plan. Alaska Department of Fish and Game, Division of Commercial Fisheries, Regional Information Report 1J21-12, Douglas.
+\vspace{0.15cm}
+\item Ehresmann, R., \textbf{A. Olson}, and J. Sullivan. 2020. 2020 Southern Southeast Inside Subdistrict Sablefish Fishery Management Plan. Alaska Department of Fish and Game, Regional Information Report No. 1J20-10, Douglas, Alaska.
+\vspace{0.15cm}
+\item Howard, K. G., S. Campen, F.R. Bowers, R.E. Chadwick, J.W. Erickson, J.J. Hasbrouck, T.R. McKinley, J. Nichols, N. Nichols, \textbf{A. Olson}, J. Rumble, T. T. Taube, and B. Williams. 2019. ADF\&G Statewide Rockfish Initiave: Strategic plan 2017-2020. Alaska Department of Fish and Game, Division of Commercial Fisheries, Regional Information Report 5J19-05.
+\vspace{0.15cm}
+\item Howard, K. G., C. Habicht, E. Russ, \textbf{A. Olson}, J. Nichols, and M. Schuster. 2019. Operational Plan: Genetic sampling of \\yelloweye and black rockfish from inside and outside waters of Prince William Sound, North Gulf of Alaska, and Southeast Alaska. Alaska Department of Fish and Game, Regional Operational Plan ROP.SF.4A.2019.01, Anchorage.
+\vspace{0.15cm}
+\item Howard, K. G., C. Worton, E. Russ, J. Nichols, \textbf{A. Olson}, K. Wood, M. Schuster, K. Reppert, T. Tydingco, M. Byerly, and S. Campen. 2019. Alaska Department of Fish and Game statewide rockfish initiative. Alaska Department of Fish and Game, Special Publication No. 19-09, Anchorage.
+\vspace{0.15cm}
+\item Noever, C., \textbf{A. Olson} and H. Glenner, 2016. Two new cryptic and sympatric species of the king crab parasite
+Briarosaccus (Cirrepedia: Rhizocephala) in the North Pacific. Zoological Journal of the Linnean Society, 176:
+3-14.
+\vspace{0.15cm}
+\item Messmer, A., G. Bishop, J. Bednarski, Siddon, C., and \textbf{A. Olson}. 2010. 2010. Southeast Alaska golden king crab \\onboard observer program methods. Alaska Department of Fish and Game, Division of Commercial Fisheries, Regional Information Report 1J10-17, Douglas.
+\vspace{0.15cm}
+\item Messmer, A. and \textbf{A. Olson}. 2010. Golden king crab observer summary report, 1999/00 through 2008/09 seasons. Alaska Department of Fish and Game, Regional Information Report 1J10-18, Douglas.
+\vspace{0.15cm}
+\item Messmer, A., J. Stratman, \textbf{A. Olson}, K. Wood, K. Palof, and D. Harris. 2014. Annual management report for the 2013/2014 Southeast Alaska/Yakutat red and blue king crab fisheries. Alaska Department of Fish and Game, Fishery Management Report No. 14-49, Anchorage.
+\vspace{0.15cm}
+\item Messmer, A., J. Stratman, K. Palof, and \textbf{A. Olson}. 2021. Management report for the Southeast Alaska and Yakutat red and blue king crab fisheries, 2017/18–2019/20. Alaska Department of Fish and Game, Fishery Management Report No. 21-08, Anchorage.
+\vspace{0.15cm}
+\item \textbf{Olson, A.}, and A. Baldwin. 2018. Eptatretus spp. (Hagfish) occurrence in Southern Southeast Alaska. Alaska Department of Fish and Game, Regional Operational Plan ROP.CF.1J.2018.02, Douglas. 
+\vspace{0.15cm}
+\item \textbf{Olson, A.} and G. Bishop. 2012. Southeast Alaska golden king crab onboard observer program report for 1998 through 2010 seasons. Alaska Department of Fish and Game, Division of Commercial Fisheries, Regional Information Report \\1J12-11, Douglas.
+\vspace{0.15cm}
+\item \textbf{Olson, A.}, and K. Carroll. 2017. Southern Southeast Inside (Clarence Strait) sablefish longline survey. Alaska Department of Fish and Game, Regional Operational Plan ROP.CF.1J.2017.03, Anchorage.
+\vspace{0.15cm}
+\item \textbf{Olson, A.}, J. Stahl, M. Vaughn, K. Carroll, and A. Baldwin. 2017. Annual management report for the Southeast Alaska and Yakutat groundfish fisheries, 2017. Alaska Department of Fish and Game, Fishery Management Report No. 17-54, \\Anchorage.
+\vspace{0.15cm}
+\item \textbf{Olson, A.}, J. Stahl, B. Williams, S. Meyer, and M. Jaenicke. 2017. Chapter 14: Assessment of the demersal shelf rockfish stock complex in the southeast outside subdistrict of the Gulf of Alaska. Pages 1153–1168 in Stock Assessment and \\Fishery Evaluation Report for the Groundfish Resources of the Gulf of Alaska. North Pacific Fishery Management Council, Anchorage, AK.
+\vspace{0.15cm}
+\item \textbf{Olson, A.}, J. Stratman, A. Messmer, and K. Wood. 2014. Annual management report for the 2013/2014 Southeast\\ Alaska/Yakutat golden king crab fisheries. Alaska Department of Fish and Game, Fishery Management Report No. 14-51, Anchorage.
+\vspace{0.15cm}
+\item \textbf{Olson, A.}, and J. Sullivan. 2019. 2019 Southern Southeast Inside Subdistrict sablefish fishery management plan. Alaska Department of Fish and Game, Regional Information Report No. 1J18-07, Douglas, Alaska.
+\vspace{0.15cm}
+\item \textbf{Olson, A.}, K. Van Kirk, J. Stahl, S. Meyer, and M. Jaenicke. 2016. Chapter 14: Assessment of the demersal shelf rockfish stock complex in the southeast outside district of the Gulf of Alaska. Pages 565–608 in Stock Assessment and Fishery Evaluation Report for the Groundfish Resources of the Gulf of Alaska. North Pacific Fishery Management Council, \\Anchorage, AK.
+\vspace{0.15cm}
+\item \textbf{Olson, A.}, B. Williams, and M. Jaenicke. 2018. Chapter 14: Assessment of the demersal shelf rockfish stock complex in the southeast outside subdistrict of the Gulf of Alaska. Stock Assessment and Fishery Evaluation Report for the \\Groundfish Resources of the Gulf of Alaska. North Pacific Fishery Management Council, Anchorage, AK.
+\vspace{0.15cm}
+\item \textbf{Olson, A.P.}, C.E. Siddon, G.L. Eckert. 2018. Spatial variability in size at maturity of golden king crab (\textit{Lithodes aequispinus}) and implications for fisheries management. Royal Society of Open Science, 5: 171802.
+\vspace{0.15cm}
+\item Stratman, J., A. Messmer, G. Bishop, C. Siddon, \textbf{A. Olson}. 2011. 2012 Report to the Alaska Board of Fisheries on Southeast Alaska/Yakutat king crab fisheries. Alaska Department of Fish and Game, Fishery Management Report No. 11-68, \\Anchorage.
+\vspace{0.15cm}
+\item Stratman, J., A. Messmer, \textbf{A. Olson}, K. Wood., and S. Kelley. 2014. Annual Management Report for the 2013/2014 \\Southeast Alaska/Yakutat Dungeness crab fisheries. Alaska Department of Fish and Game, Fishery Management Report No. 14-52, Anchorage.
+\vspace{0.15cm}
+\item Stratman, J., \textbf{A. Olson}, and K. Palof. 2021. 2020 Golden king crab stock status and management plan for the 2020/2021 season. Alaska Department of Fish and Game, Regional Information Report No. 1J21-10, Douglas, Alaska.
+\vspace{0.15cm}
+\item Sullivan, J., \textbf{A. Olson}, and B. Williams. 2019. 2018 Northern Southeast Inside Subdistrict sablefish fishery stock assessment and 2019 management plan. Alaska Department of Fish and Game, Regional Information Report 5J19-03, Juneau.
+\vspace{0.15cm}
+\item Wood, K., \textbf{A. Olson}, B. Williams, and M. Jaenicke. 2019. Chapter 14: Assessment of the dermersal shelf rockfish stock complex in the southeast outside subdistrict of the Gulf of Alaska. Stock Assessment and Fishery Evauluation Report for the Groundfish Resources of the Gulf of Alaska. North Pacific Fishery Management Council, Anchorage, AK.
+\vspace{0.15cm}
+\item Wood, K., J. Stratman, A. Messmer, \textbf{A. Olson}, and K. Palof. 2014. Annual Management Report for the 2013/2014 \\Southeast Alaska/Yakutat Tanner Crab Fisheries. Alaska Department of Fish and Game, Fishery Management Report No. 14-50, Anchorage.
+\end{enumerate}
+\end{fullwidth}
+
+%\divider
+
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+ % \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
+
+
